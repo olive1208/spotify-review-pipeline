@@ -1,0 +1,14 @@
+{
+  "cache_reuse": 22022,
+  "completed": 99999,
+  "intent:cancellation": 4550,
+  "intent:complaint": 40182,
+  "intent:praise": 42963,
+  "intent:request": 3199,
+  "intent:unclear": 9105,
+  "needs_review": 19980,
+  "quarantined:empty_review_text": 13,
+  "quarantined:model_stage_failed": 1,
+  "quarantined:out_of_scope_not_in_100k_sample": 560609,
+  "source_rows": 660622
+}

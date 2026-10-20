@@ -1,0 +1,21 @@
+{
+  "cited_claim_ids": [
+    "C-ISS-ACCESS-count",
+    "C-ISS-ACCESS-mean",
+    "C-ISS-ACCESS-score",
+    "C-ISS-BILLING-count",
+    "C-ISS-BILLING-mean",
+    "C-ISS-BILLING-sevsum",
+    "C-ISS-OTHER-score",
+    "C-ISS-PLAYBACK-count",
+    "C-ISS-PLAYBACK-mean",
+    "C-ISS-PLAYBACK-score",
+    "C-ISS-SUPPORT-count",
+    "C-ISS-SUPPORT-score",
+    "C-ISS-USABILITY-count",
+    "C-ISS-USABILITY-mean",
+    "C-ISS-USABILITY-score"
+  ],
+  "note": "Code checks IDs and numbers; a person still checks whether the argument is sound.",
+  "problems": []
+}

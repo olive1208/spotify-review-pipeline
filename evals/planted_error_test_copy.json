@@ -1,0 +1,150 @@
+{
+  "note": "TEST COPY with deliberately wrong labels; not used in results",
+  "records": {
+    "1e4c6c1a-a3f5-4cb8-9c5d-e4493ecdef20": {
+      "entities": [],
+      "evidence_quote": "Good...",
+      "intent": "cancellation",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": true,
+      "review_id": "1e4c6c1a-a3f5-4cb8-9c5d-e4493ecdef20",
+      "sentiment": 0.0,
+      "severity": 1,
+      "source_sha256": "e6ac03c7c277263ffa14c562941628eeb2c586ad6ccbd323db28ca44ac7a52e4",
+      "status": "completed",
+      "topic": "playback"
+    },
+    "28600993-f4dc-4ca4-89fc-f5965b5a2cee": {
+      "entities": [],
+      "evidence_quote": "Amazing app, best for listening to music.",
+      "intent": "cancellation",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": false,
+      "review_id": "28600993-f4dc-4ca4-89fc-f5965b5a2cee",
+      "sentiment": 1.0,
+      "severity": 1,
+      "source_sha256": "6e6e626f46c28f7099d8dc28386c97f03a6827c02df9d58568d7deab6edf637b",
+      "status": "completed",
+      "topic": "billing"
+    },
+    "77618c9b-1ae2-48c3-a591-b26279085be3": {
+      "entities": [],
+      "evidence_quote": "Nice🫂",
+      "intent": "cancellation",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": true,
+      "review_id": "77618c9b-1ae2-48c3-a591-b26279085be3",
+      "sentiment": 0.5,
+      "severity": 1,
+      "source_sha256": "fffac0a4ffc229b9a1f19b99a73bb7256dffe98ac1c15b728f0fe5a62f4754b8",
+      "status": "completed",
+      "topic": "access"
+    },
+    "8e378fbb-6003-4b19-af45-dda7c521daa8": {
+      "entities": [
+        "loop",
+        "shuffle",
+        "rewind",
+        "skip",
+        "premium",
+        "update"
+      ],
+      "evidence_quote": "Basic features like loop, shuffle, rewind or skip are made only for premium users",
+      "intent": "praise",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": false,
+      "review_id": "8e378fbb-6003-4b19-af45-dda7c521daa8",
+      "sentiment": -1.0,
+      "severity": 3,
+      "source_sha256": "224c957ddc95e75f5c4d4d4718b0af3d356230bd9414b4dd042e573e0e42ac0e",
+      "status": "completed",
+      "topic": "other"
+    },
+    "a25e693d-27b7-4ef0-8a9d-165fe1cdecd3": {
+      "entities": [
+        "ads"
+      ],
+      "evidence_quote": "The app plays way to many adds and it states that it will play an add every 30 minutes",
+      "intent": "praise",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": false,
+      "review_id": "a25e693d-27b7-4ef0-8a9d-165fe1cdecd3",
+      "sentiment": -1.0,
+      "severity": 2,
+      "source_sha256": "7bfe6933dcb04205208dad252d7d4a1c54c3e84e9d15073a51edf5ba88f73f8f",
+      "status": "completed",
+      "topic": "access"
+    },
+    "d5e20770-ee5f-46c2-9650-025d99dcd85b": {
+      "entities": [],
+      "evidence_quote": "The best music streaming platform EVER.",
+      "intent": "cancellation",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": false,
+      "review_id": "d5e20770-ee5f-46c2-9650-025d99dcd85b",
+      "sentiment": 1.0,
+      "severity": 1,
+      "source_sha256": "0eefa9a6a3afea7816a417cc911117b00f13e926636d122a7de4d1e6668928a9",
+      "status": "completed",
+      "topic": "usability"
+    },
+    "d699f0e9-a8e3-4750-bb94-c31e3e0c3075": {
+      "entities": [
+        "premium"
+      ],
+      "evidence_quote": "If you ever buy a subscription you can NEVER go back to free they try to force it on you.",
+      "intent": "praise",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": false,
+      "review_id": "d699f0e9-a8e3-4750-bb94-c31e3e0c3075",
+      "sentiment": -0.5,
+      "severity": 2,
+      "source_sha256": "bdcafa4a7369180c232c5a46cd5b07873a8b01ed354fd81946b62e9be6872cf4",
+      "status": "completed",
+      "topic": "downloads"
+    },
+    "f081b995-cbc9-4291-b1f1-7ba3180760dd": {
+      "entities": [],
+      "evidence_quote": "Good well ❤️‍🩹 song",
+      "intent": "cancellation",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": false,
+      "review_id": "f081b995-cbc9-4291-b1f1-7ba3180760dd",
+      "sentiment": 0.5,
+      "severity": 1,
+      "source_sha256": "2adf81be454f9d3fc382a9e58dadf0bc1f03b54908628423d1002a8dfa45e548",
+      "status": "completed",
+      "topic": "usability"
+    },
+    "f24bbdec-9903-41df-8c9e-d2c5c126d5cc": {
+      "entities": [
+        "support",
+        "playlist",
+        "update"
+      ],
+      "evidence_quote": "I add songs Through the app on my Samsung a54 but only my PlayStation will show the songs I've added.",
+      "intent": "praise",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": false,
+      "review_id": "f24bbdec-9903-41df-8c9e-d2c5c126d5cc",
+      "sentiment": -0.5,
+      "severity": 3,
+      "source_sha256": "bc2f77ec8e75235aace2d6aafbc37235ba3c100bb8a927275788093cb1a7a3e8",
+      "status": "completed",
+      "topic": "billing"
+    },
+    "f2f94f3e-c4c0-4d1a-a68c-6a1424b8e822": {
+      "entities": [],
+      "evidence_quote": "I enjoy the music I find here.",
+      "intent": "cancellation",
+      "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+      "needs_review": false,
+      "review_id": "f2f94f3e-c4c0-4d1a-a68c-6a1424b8e822",
+      "sentiment": 0.5,
+      "severity": 1,
+      "source_sha256": "8b788e5fd037e762654b2d1babef229e7f80060494a9d0e946fa74aa1c93e7ae",
+      "status": "completed",
+      "topic": "playback"
+    }
+  }
+}

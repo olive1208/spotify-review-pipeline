@@ -1,0 +1,14 @@
+{
+  "allow_multi_issue": false,
+  "analysis_count": 660622,
+  "analysis_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "classification_input_fields": [
+    "review_text"
+  ],
+  "declared_scope": "seeded random sample of 100000 nonempty reviews (seed 'olive-a5-sample-v1'), always including 10050 IDs from ['golden_50_to_label.csv', 'analysis_10000.csv']",
+  "in_scope_reviews": 100000,
+  "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+  "run_id": "run-20261019-215547",
+  "scope_note": "The instructor allowed classifying at least 100,000 reviews. Every source ID is still accounted for: out-of-scope nonempty reviews are quarantined with reason out_of_scope_not_in_100k_sample and are NOT counted as classifications.",
+  "version": "a5-audit-v1"
+}

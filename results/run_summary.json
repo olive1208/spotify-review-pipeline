@@ -1,0 +1,91 @@
+{
+  "calls_by_role": {
+    "enrich": {
+      "attempts": 2546,
+      "cache_read_input_tokens": 5086788,
+      "cost_usd": 3.217624,
+      "failed": 2,
+      "input_tokens": 4623117,
+      "output_tokens": 5401857,
+      "succeeded": 2544
+    },
+    "group": {
+      "attempts": 2,
+      "cache_read_input_tokens": 0,
+      "cost_usd": 0.004775,
+      "input_tokens": 26865,
+      "output_tokens": 3834,
+      "succeeded": 2
+    },
+    "memo": {
+      "attempts": 2,
+      "cache_read_input_tokens": 0,
+      "cost_usd": 0.054998,
+      "input_tokens": 11344,
+      "output_tokens": 2962,
+      "succeeded": 2
+    },
+    "verify": {
+      "attempts": 32,
+      "cache_read_input_tokens": 34069,
+      "cost_usd": 0.018155,
+      "input_tokens": 43011,
+      "output_tokens": 26752,
+      "succeeded": 32
+    }
+  },
+  "enrich_sessions": [
+    {
+      "completed_after": null,
+      "completed_before": 0,
+      "ended_at": null,
+      "note": null,
+      "phase": "initial",
+      "session_id": "s-26b50b75",
+      "stage": "enrich",
+      "started_at": "2026-10-20T04:57:05+00:00",
+      "status": "abandoned_before_any_call"
+    },
+    {
+      "completed_after": 16238,
+      "completed_before": 0,
+      "ended_at": "2026-10-20T05:00:55+00:00",
+      "note": null,
+      "phase": "initial",
+      "session_id": "s-13b9061e",
+      "stage": "enrich",
+      "started_at": "2026-10-20T04:59:54+00:00",
+      "status": "interrupted"
+    },
+    {
+      "completed_after": 99919,
+      "completed_before": 16238,
+      "ended_at": "2026-10-20T05:24:39+00:00",
+      "note": null,
+      "phase": "resume",
+      "session_id": "s-80c742ca",
+      "stage": "enrich",
+      "started_at": "2026-10-20T05:02:09+00:00",
+      "status": "completed"
+    },
+    {
+      "completed_after": 99999,
+      "completed_before": 99919,
+      "ended_at": "2026-10-20T05:30:14+00:00",
+      "note": null,
+      "phase": "resume",
+      "session_id": "s-1781eda0",
+      "stage": "enrich",
+      "started_at": "2026-10-20T05:30:02+00:00",
+      "status": "completed"
+    }
+  ],
+  "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+  "record_status": {
+    "completed": 99999,
+    "quarantined": 560623
+  },
+  "run_id": "run-20261019-215547",
+  "spend_limit_usd": 15.0,
+  "total_cost_usd": 3.295552
+}

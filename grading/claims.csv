@@ -1,0 +1,16 @@
+claim_id,issue_id,metric,value
+C-ISS-USABILITY-count,ISS-USABILITY,complaint_count,12071
+C-ISS-USABILITY-mean,ISS-USABILITY,mean_severity,2.383647
+C-ISS-USABILITY-score,ISS-USABILITY,priority_score,28773
+C-ISS-OTHER-score,ISS-OTHER,priority_score,27528
+C-ISS-BILLING-count,ISS-BILLING,complaint_count,7147
+C-ISS-BILLING-sevsum,ISS-BILLING,severity_sum,18542
+C-ISS-BILLING-mean,ISS-BILLING,mean_severity,2.594375
+C-ISS-PLAYBACK-count,ISS-PLAYBACK,complaint_count,5577
+C-ISS-PLAYBACK-mean,ISS-PLAYBACK,mean_severity,3.072261
+C-ISS-PLAYBACK-score,ISS-PLAYBACK,priority_score,17134
+C-ISS-ACCESS-count,ISS-ACCESS,complaint_count,1718
+C-ISS-ACCESS-mean,ISS-ACCESS,mean_severity,3.845751
+C-ISS-ACCESS-score,ISS-ACCESS,priority_score,6607
+C-ISS-SUPPORT-count,ISS-SUPPORT,complaint_count,128
+C-ISS-SUPPORT-score,ISS-SUPPORT,priority_score,337

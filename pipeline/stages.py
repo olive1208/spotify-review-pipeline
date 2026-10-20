@@ -258,6 +258,7 @@ def enrich(run, workers=None, max_batches=None, retry_failed=False):
         seen.add(key)
         if key not in labeled_keys and key not in failed_keys:
             pending.append((key, rid, text))
+    llm = run.llm() if pending else None  # load the API client first (slow first import on some machines)
     already = len(labeled_keys)
     phase = "resume" if already else "initial"
     session_id = "s-" + uuid.uuid4().hex[:8]
@@ -269,6 +270,7 @@ def enrich(run, workers=None, max_batches=None, retry_failed=False):
         write_json(snap_dir / f"before_{session_id}.json", snap)
         if not (snap_dir / "first_resume_before.json").exists():
             write_json(snap_dir / "first_resume_before.json", snap)
+    st.db.execute("UPDATE sessions SET status='abandoned_before_any_call' WHERE status='running'")
     st.db.execute("INSERT INTO sessions VALUES(?,?,?,?,?,?,?,?,?)",
                   (session_id, "enrich", phase, now(), None, len(completed_before), None, "running", None))
     st.db.commit()
@@ -282,7 +284,6 @@ def enrich(run, workers=None, max_batches=None, retry_failed=False):
     batches = [pending[i:i + bs] for i in range(0, len(pending), bs)]
     if max_batches:
         batches = batches[:max_batches]
-    llm = run.llm()
     done_batches, new_labels, quarantined = 0, 0, 0
     status = "completed"
     t0 = time.time()
@@ -480,10 +481,11 @@ def verify(run, sample_size=None):
     recs = {r["review_id"]: r for r, _ in final_records(run) if r["status"] == "completed" and "cache_source_id" not in r}
     texts = dict(run.store.db.execute("SELECT review_id, review_text FROM source WHERE in_scope=1"))
     n = min(sample_size or cfg["verify_sample_size"], len(recs))
-    sample = seeded_shuffle(recs.keys(), cfg["verify_seed"])[:n]
+    # stable sample: lowest SHA-256(seed:id); adding a few records later barely changes it
+    sample = sorted(recs, key=lambda r: hashlib.sha256(f"{cfg['verify_seed']}:{r}".encode()).hexdigest())[:n]
     preds, vconfig = run_verifier(run, [(rid, texts[rid]) for rid in sample])
     summary, rows = compare({rid: recs[rid] for rid in sample}, preds)
-    summary.update({"declared_sample": f"seeded random sample of {n} completed original (non-cache) records",
+    summary.update({"declared_sample": f"{n} completed original (non-cache) records with the lowest SHA-256(seed:review_id)",
                     "seed": cfg["verify_seed"], "verify_config": vconfig, "verified": len(preds)})
     write_json(run.dir / "verify" / "verify_report.json", summary)
     write_csv(run.dir / "verify" / "disagreements.csv",
@@ -699,7 +701,7 @@ def check_memo(text, claims, summary, ranking, recs, issues, scope=None):
         if cid not in by_id:
             problems.append(f"cited claim {cid} does not exist")
     # each cited claim's value must appear right before it
-    for m in re.finditer(r"([0-9][0-9,]*(?:\.[0-9]+)?)[^\[\n]{0,40}\[(C-[^\]]+)\]", text):
+    for m in re.finditer(r"([0-9][0-9,]*(?:\.[0-9]+)?)[^\[\n0-9]{0,40}\[(C-[^\]]+)\]", text):
         num, cid = m.group(1).replace(",", ""), m.group(2)
         if cid in by_id and num != by_id[cid]["value"]:
             problems.append(f"number {m.group(1)} next to [{cid}] but saved value is {by_id[cid]['value']}")

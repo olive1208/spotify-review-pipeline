@@ -1,0 +1,5 @@
+{
+  "note": "Out-of-scope rows are listed one by one in grading/records.jsonl.gz with reason out_of_scope_not_in_100k_sample; they are accounted for but not classified.",
+  "out_of_scope_not_in_sample": 560609,
+  "quarantined_detail_rows_in_quarantine_jsonl": 14
+}

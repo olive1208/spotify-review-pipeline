@@ -1,0 +1,41 @@
+{
+  "config": {
+    "api_attempts_per_call": 3,
+    "enrich_batch_size": 50,
+    "enrich_max_output_tokens": 6000,
+    "group_examples_per_issue": 25,
+    "group_max_output_tokens": 3000,
+    "invalid_output_retries": 1,
+    "max_workers_allowed": 16,
+    "memo_evidence_per_issue": 5,
+    "memo_max_output_tokens": 8000,
+    "models": {
+      "enrich": "claude-haiku-5-5",
+      "group": "claude-haiku-5-5",
+      "memo": "claude-sonnet-5-5",
+      "verify": "claude-haiku-5-5"
+    },
+    "prompt_versions": {
+      "enrich": "enrich_v1",
+      "group": "group_v1",
+      "memo": "memo_v1",
+      "verify": "verify_v1"
+    },
+    "provider": "anthropic",
+    "sample_seed": "olive-a5-sample-v1",
+    "schema_version": "schema_v1",
+    "spend_limit_usd": 15.0,
+    "stronger_model_fallback_fraction": 0.0,
+    "thinking": "not enabled (no extended thinking requested on any call)",
+    "verify_batch_size": 25,
+    "verify_max_output_tokens": 3000,
+    "verify_sample_size": 400,
+    "verify_seed": "olive-a5-verify-v1",
+    "workers": 1
+  },
+  "created_at": "2026-10-20T04:57:04+00:00",
+  "input_csv": "data/spotify_reviews_18months.csv",
+  "input_sha256": "1fc85de68a304dd8978b537cfa58793d5f41cbaf417fa32cb53899f83a2fcef6",
+  "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+  "run_id": "run-20261019-215547"
+}

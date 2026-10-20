@@ -1,0 +1,475 @@
+{
+  "claims": [
+    {
+      "claim_id": "C-ISS-USABILITY-count",
+      "issue_id": "ISS-USABILITY",
+      "metric": "complaint_count",
+      "value": "12071"
+    },
+    {
+      "claim_id": "C-ISS-USABILITY-sevsum",
+      "issue_id": "ISS-USABILITY",
+      "metric": "severity_sum",
+      "value": "28773"
+    },
+    {
+      "claim_id": "C-ISS-USABILITY-mean",
+      "issue_id": "ISS-USABILITY",
+      "metric": "mean_severity",
+      "value": "2.383647"
+    },
+    {
+      "claim_id": "C-ISS-USABILITY-score",
+      "issue_id": "ISS-USABILITY",
+      "metric": "priority_score",
+      "value": "28773"
+    },
+    {
+      "claim_id": "C-ISS-OTHER-count",
+      "issue_id": "ISS-OTHER",
+      "metric": "complaint_count",
+      "value": "13886"
+    },
+    {
+      "claim_id": "C-ISS-OTHER-sevsum",
+      "issue_id": "ISS-OTHER",
+      "metric": "severity_sum",
+      "value": "27528"
+    },
+    {
+      "claim_id": "C-ISS-OTHER-mean",
+      "issue_id": "ISS-OTHER",
+      "metric": "mean_severity",
+      "value": "1.982428"
+    },
+    {
+      "claim_id": "C-ISS-OTHER-score",
+      "issue_id": "ISS-OTHER",
+      "metric": "priority_score",
+      "value": "27528"
+    },
+    {
+      "claim_id": "C-ISS-BILLING-count",
+      "issue_id": "ISS-BILLING",
+      "metric": "complaint_count",
+      "value": "7147"
+    },
+    {
+      "claim_id": "C-ISS-BILLING-sevsum",
+      "issue_id": "ISS-BILLING",
+      "metric": "severity_sum",
+      "value": "18542"
+    },
+    {
+      "claim_id": "C-ISS-BILLING-mean",
+      "issue_id": "ISS-BILLING",
+      "metric": "mean_severity",
+      "value": "2.594375"
+    },
+    {
+      "claim_id": "C-ISS-BILLING-score",
+      "issue_id": "ISS-BILLING",
+      "metric": "priority_score",
+      "value": "18542"
+    },
+    {
+      "claim_id": "C-ISS-PLAYBACK-count",
+      "issue_id": "ISS-PLAYBACK",
+      "metric": "complaint_count",
+      "value": "5577"
+    },
+    {
+      "claim_id": "C-ISS-PLAYBACK-sevsum",
+      "issue_id": "ISS-PLAYBACK",
+      "metric": "severity_sum",
+      "value": "17134"
+    },
+    {
+      "claim_id": "C-ISS-PLAYBACK-mean",
+      "issue_id": "ISS-PLAYBACK",
+      "metric": "mean_severity",
+      "value": "3.072261"
+    },
+    {
+      "claim_id": "C-ISS-PLAYBACK-score",
+      "issue_id": "ISS-PLAYBACK",
+      "metric": "priority_score",
+      "value": "17134"
+    },
+    {
+      "claim_id": "C-ISS-CATALOG-count",
+      "issue_id": "ISS-CATALOG",
+      "metric": "complaint_count",
+      "value": "3060"
+    },
+    {
+      "claim_id": "C-ISS-CATALOG-sevsum",
+      "issue_id": "ISS-CATALOG",
+      "metric": "severity_sum",
+      "value": "7416"
+    },
+    {
+      "claim_id": "C-ISS-CATALOG-mean",
+      "issue_id": "ISS-CATALOG",
+      "metric": "mean_severity",
+      "value": "2.423529"
+    },
+    {
+      "claim_id": "C-ISS-CATALOG-score",
+      "issue_id": "ISS-CATALOG",
+      "metric": "priority_score",
+      "value": "7416"
+    },
+    {
+      "claim_id": "C-ISS-ACCESS-count",
+      "issue_id": "ISS-ACCESS",
+      "metric": "complaint_count",
+      "value": "1718"
+    },
+    {
+      "claim_id": "C-ISS-ACCESS-sevsum",
+      "issue_id": "ISS-ACCESS",
+      "metric": "severity_sum",
+      "value": "6607"
+    },
+    {
+      "claim_id": "C-ISS-ACCESS-mean",
+      "issue_id": "ISS-ACCESS",
+      "metric": "mean_severity",
+      "value": "3.845751"
+    },
+    {
+      "claim_id": "C-ISS-ACCESS-score",
+      "issue_id": "ISS-ACCESS",
+      "metric": "priority_score",
+      "value": "6607"
+    },
+    {
+      "claim_id": "C-ISS-DOWNLOADS-count",
+      "issue_id": "ISS-DOWNLOADS",
+      "metric": "complaint_count",
+      "value": "1145"
+    },
+    {
+      "claim_id": "C-ISS-DOWNLOADS-sevsum",
+      "issue_id": "ISS-DOWNLOADS",
+      "metric": "severity_sum",
+      "value": "3502"
+    },
+    {
+      "claim_id": "C-ISS-DOWNLOADS-mean",
+      "issue_id": "ISS-DOWNLOADS",
+      "metric": "mean_severity",
+      "value": "3.058515"
+    },
+    {
+      "claim_id": "C-ISS-DOWNLOADS-score",
+      "issue_id": "ISS-DOWNLOADS",
+      "metric": "priority_score",
+      "value": "3502"
+    },
+    {
+      "claim_id": "C-ISS-SUPPORT-count",
+      "issue_id": "ISS-SUPPORT",
+      "metric": "complaint_count",
+      "value": "128"
+    },
+    {
+      "claim_id": "C-ISS-SUPPORT-sevsum",
+      "issue_id": "ISS-SUPPORT",
+      "metric": "severity_sum",
+      "value": "337"
+    },
+    {
+      "claim_id": "C-ISS-SUPPORT-mean",
+      "issue_id": "ISS-SUPPORT",
+      "metric": "mean_severity",
+      "value": "2.632813"
+    },
+    {
+      "claim_id": "C-ISS-SUPPORT-score",
+      "issue_id": "ISS-SUPPORT",
+      "metric": "priority_score",
+      "value": "337"
+    }
+  ],
+  "evidence_pack": [
+    {
+      "issue_id": "ISS-USABILITY",
+      "issue_name": "Too many ads and shuffle or skip problems",
+      "reviews": [
+        {
+          "quote": "Ads, ads and more ads. Says it will give you 30mins ad free after listening to 10 ads in a row.",
+          "review_id": "3155da94-4c5d-446c-935c-a64d0c969096",
+          "severity": 2
+        },
+        {
+          "quote": "Can't even skip music more than 6 times and can't rewind",
+          "review_id": "e57b91ba-140f-455d-a4fb-b6d6bf8b7dae",
+          "severity": 3
+        },
+        {
+          "quote": "when I shuffle my Playlist it plays random songs that aren't on the Playlist",
+          "review_id": "4d341970-f786-4d9e-9d5a-74a645188ec9",
+          "severity": 2
+        },
+        {
+          "quote": "Gave my 8 ads in a row before I even got to listen to music.",
+          "review_id": "76a70ac5-97ca-4c38-aa3f-ffa58c0b645f",
+          "severity": 2
+        },
+        {
+          "quote": "we can't do song forward and backward they restricted this",
+          "review_id": "176d641f-5f4e-4690-9bd8-bb32a2125ed4",
+          "severity": 3
+        }
+      ],
+      "summary": "Reviewers complain about frequent ads, including long runs of ads in a row, and about limited controls. Common issues include shuffle playing the wrong songs, limited skipping or rewinding, and queue problems."
+    },
+    {
+      "issue_id": "ISS-OTHER",
+      "issue_name": "General negative rating, no specific cause",
+      "reviews": [
+        {
+          "quote": "This app is getting worse day by day.",
+          "review_id": "ad4a0b8c-ef0d-46e8-b7b4-73a5afda37d8",
+          "severity": 2
+        },
+        {
+          "quote": "Worst App i have ever used",
+          "review_id": "18fc7198-a3b8-49cf-8299-c27ad8f6e2d0",
+          "severity": 2
+        },
+        {
+          "quote": "The latest update finally gave me the push I needed to move over to tidal.",
+          "review_id": "16a792c1-f380-43d1-84d1-57d45bef7299",
+          "severity": 2
+        },
+        {
+          "quote": "The update has become so irritating 🙄 gosh if this continued people will this stop using this app",
+          "review_id": "99ebbe8b-edc9-4617-a465-18232b63e63a",
+          "severity": 2
+        },
+        {
+          "quote": "Hate the latest update. I cant listen to my favorite song now.",
+          "review_id": "f0bfa6cd-2929-46d5-8954-34e62ce733bc",
+          "severity": 3
+        }
+      ],
+      "summary": "Most reviews are broad insults or general dissatisfaction with the app or recent updates, with no specific problem named. A few mention switching to another service or dislike of company or policy."
+    },
+    {
+      "issue_id": "ISS-BILLING",
+      "issue_name": "Features locked behind premium paywall",
+      "reviews": [
+        {
+          "quote": "Now Spotify is asking me to play the song I'd like to listen tomorrow Or buy premium.",
+          "review_id": "7379ad53-8fd8-4e54-830f-579ab6e6c9c4",
+          "severity": 3
+        },
+        {
+          "quote": "everything requirs premium even changing the song",
+          "review_id": "558099c8-fae1-40d8-b2a4-4abfe0e7d039",
+          "severity": 3
+        },
+        {
+          "quote": "Removing the \"Shuffle As You Want\" option plus making it a premium",
+          "review_id": "887ae060-044b-4f68-8214-c5845ee5e62c",
+          "severity": 3
+        },
+        {
+          "quote": "One of the worst app it has became now Only the premium member can have songs of their choice what the hell is this",
+          "review_id": "91d732fe-f976-4191-aeae-a9a219055749",
+          "severity": 3
+        },
+        {
+          "quote": "Removed even the basic features of any music players. Can't do anything without premium..",
+          "review_id": "1cea90d6-08cb-426f-8906-806bd6712be2",
+          "severity": 3
+        }
+      ],
+      "summary": "Reviewers say basic features such as choosing songs, replaying tracks, shuffle, forward, and queuing now require premium. Several say the app should be paid only or that premium is being pushed too hard."
+    },
+    {
+      "issue_id": "ISS-PLAYBACK",
+      "issue_name": "Crashes, pauses, and playback bugs",
+      "reviews": [
+        {
+          "quote": "the app crashed, the lyrics of some songs don't appear",
+          "review_id": "d6cf205c-e984-4541-b334-f086a0045c08",
+          "severity": 3
+        },
+        {
+          "quote": "Constantly pauses songs on androids with stable connection.",
+          "review_id": "c5d19276-d1c6-43a0-a1a8-50e4ce2dba38",
+          "severity": 3
+        },
+        {
+          "quote": "Last update is totally broken. Will randomly get stuck and just refuse to play songs from certain playlists.",
+          "review_id": "d8a3f32d-8744-4044-a36c-332652861a01",
+          "severity": 3
+        },
+        {
+          "quote": "My dudes i love you but i now cant listen to music when my phones locked. Please fix and ill change rating",
+          "review_id": "9bccb349-4a9c-4f0f-9e76-53907afd9d7a",
+          "severity": 3
+        },
+        {
+          "quote": "Recently I can't play my favorite songs",
+          "review_id": "8ed25aab-f918-41bb-afd6-cfafcc84e134",
+          "severity": 3
+        }
+      ],
+      "summary": "Reviewers report the app crashing, pausing or stopping mid-song, failing to load or play playlists, and playing random songs instead of the chosen one. Some say it stops when the phone is locked or on certain connections."
+    },
+    {
+      "issue_id": "ISS-CATALOG",
+      "issue_name": "Missing lyrics and unavailable songs",
+      "reviews": [
+        {
+          "quote": "It doesn't show any song lyrics even for those that have lyrics which is wack",
+          "review_id": "38323f82-13c3-4036-bcb8-0ea3aea47c6a",
+          "severity": 2
+        },
+        {
+          "quote": "Currently the app is not showing me lyrics for few months 😡😡😡😡😡😡 there should be an option for lyrics button",
+          "review_id": "c1833d36-b7a7-4fda-8b84-2bf4012d5e70",
+          "severity": 2
+        },
+        {
+          "quote": "Many songs are not available from India Good for only English and other languages song Not for Hindi listeners",
+          "review_id": "6275e8eb-ce4e-40f8-86b3-ff32f97b8b58",
+          "severity": 3
+        },
+        {
+          "quote": "i hate how songs I've been playing for years and even at my top 5 just turned unavailable",
+          "review_id": "899d6e7a-9af5-4825-bc56-55c701cdedd0",
+          "severity": 3
+        },
+        {
+          "quote": "I can not search songs or see my Playlist.",
+          "review_id": "0be72d83-b565-4db9-972b-3ecfc0f7227e",
+          "severity": 3
+        }
+      ],
+      "summary": "Reviewers report lyrics that do not show or load for some songs, and songs or whole catalogs that are unavailable or removed. Some also say search and playback pick the wrong or unrelated songs."
+    },
+    {
+      "issue_id": "ISS-ACCESS",
+      "issue_name": "Cannot log in or access account",
+      "reviews": [
+        {
+          "quote": "Can't login with phone number",
+          "review_id": "75079d0e-e5bf-44cf-92c2-85f649781b34",
+          "severity": 4
+        },
+        {
+          "quote": "When i login my account by phone no. I didn't get any otp",
+          "review_id": "43964d5b-208b-4756-8f4b-a6e5da11deda",
+          "severity": 4
+        },
+        {
+          "quote": "I can't even log on. I use the correct email and password. But on my new phone. It won't even get pass the login page.",
+          "review_id": "d0554bd0-7748-430e-8c5f-667c23f30dad",
+          "severity": 4
+        },
+        {
+          "quote": "I'm not even able to get into my account . Login attempts keep failing",
+          "review_id": "83695ac4-d45d-4284-a3fe-d432e92e9a8e",
+          "severity": 4
+        },
+        {
+          "quote": "I didn't get sms for login, Now I lost my old account.",
+          "review_id": "64237bbc-3d51-4b09-8e69-96da446ebccf",
+          "severity": 4
+        }
+      ],
+      "summary": "Many reviewers say they cannot log in, including with phone number, or get OTP codes, and some are logged out unexpectedly or see login failures after uninstalling. Some say the app stopped working or that they cannot create an account."
+    }
+  ],
+  "overall_summary": {
+    "cache_reuse": 22022,
+    "completed": 99999,
+    "intent:cancellation": 4550,
+    "intent:complaint": 40182,
+    "intent:praise": 42963,
+    "intent:request": 3199,
+    "intent:unclear": 9105,
+    "needs_review": 19980,
+    "quarantined:empty_review_text": 13,
+    "quarantined:model_stage_failed": 1,
+    "quarantined:out_of_scope_not_in_100k_sample": 560609,
+    "source_rows": 660622
+  },
+  "ranking": [
+    {
+      "complaint_count": "12071",
+      "issue_id": "ISS-USABILITY",
+      "mean_severity": "2.383647",
+      "priority_score": "28773",
+      "rank": "1",
+      "severity_sum": "28773"
+    },
+    {
+      "complaint_count": "13886",
+      "issue_id": "ISS-OTHER",
+      "mean_severity": "1.982428",
+      "priority_score": "27528",
+      "rank": "2",
+      "severity_sum": "27528"
+    },
+    {
+      "complaint_count": "7147",
+      "issue_id": "ISS-BILLING",
+      "mean_severity": "2.594375",
+      "priority_score": "18542",
+      "rank": "3",
+      "severity_sum": "18542"
+    },
+    {
+      "complaint_count": "5577",
+      "issue_id": "ISS-PLAYBACK",
+      "mean_severity": "3.072261",
+      "priority_score": "17134",
+      "rank": "4",
+      "severity_sum": "17134"
+    },
+    {
+      "complaint_count": "3060",
+      "issue_id": "ISS-CATALOG",
+      "mean_severity": "2.423529",
+      "priority_score": "7416",
+      "rank": "5",
+      "severity_sum": "7416"
+    },
+    {
+      "complaint_count": "1718",
+      "issue_id": "ISS-ACCESS",
+      "mean_severity": "3.845751",
+      "priority_score": "6607",
+      "rank": "6",
+      "severity_sum": "6607"
+    },
+    {
+      "complaint_count": "1145",
+      "issue_id": "ISS-DOWNLOADS",
+      "mean_severity": "3.058515",
+      "priority_score": "3502",
+      "rank": "7",
+      "severity_sum": "3502"
+    },
+    {
+      "complaint_count": "128",
+      "issue_id": "ISS-SUPPORT",
+      "mean_severity": "2.632813",
+      "priority_score": "337",
+      "rank": "8",
+      "severity_sum": "337"
+    }
+  ],
+  "scope": {
+    "in_scope_reviews": 100000,
+    "rows": 660622,
+    "scope": "seeded random sample of 100000 nonempty reviews (seed 'olive-a5-sample-v1'), always including 10050 IDs from ['golden_50_to_label.csv', 'analysis_10000.csv']"
+  }
+}

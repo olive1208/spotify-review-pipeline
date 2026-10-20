@@ -15,7 +15,7 @@
   },
   "schema_version": "schema_v1",
   "enrich_batch_size": 50,
-  "enrich_max_output_tokens": 6000,
+  "enrich_max_output_tokens": 12000,
   "verify_batch_size": 25,
   "verify_max_output_tokens": 3000,
   "group_max_output_tokens": 3000,

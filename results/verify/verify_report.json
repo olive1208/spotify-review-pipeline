@@ -1,0 +1,13 @@
+{
+  "all_three_agree": 0.7575,
+  "compared": 400,
+  "declared_sample": "400 completed original (non-cache) records with the lowest SHA-256(seed:review_id)",
+  "disagreements": 97,
+  "intent_agreement": 0.9375,
+  "seed": "olive-a5-verify-v1",
+  "severity_exact_agreement": 0.9,
+  "severity_mean_abs_diff": 0.1025,
+  "topic_agreement": 0.8675,
+  "verified": 799,
+  "verify_config": "claude-haiku-5-5+verify_v1-d673ea85"
+}
