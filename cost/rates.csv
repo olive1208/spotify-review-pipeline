@@ -1,0 +1,11 @@
+model,billing_item,usd_per_unit,unit_size,unit,currency,tier,source_url,checked_date
+claude-haiku-5-5,input,0.10,1000000,tokens,USD,standard (prompts <=100k tokens),https://platform.claude.com/docs/en/about-claude/pricing,2026-10-19
+claude-haiku-5-5,cache_read,0.01,1000000,tokens,USD,standard (prompts <=100k tokens),https://platform.claude.com/docs/en/about-claude/pricing,2026-10-19
+claude-haiku-5-5,cache_write,0.125,1000000,tokens,USD,standard 5-minute cache write = 1.25x input,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-19
+claude-haiku-5-5,output,0.50,1000000,tokens,USD,standard (prompts <=100k tokens),https://platform.claude.com/docs/en/about-claude/pricing,2026-10-19
+claude-sonnet-5-5,input,2.00,1000000,tokens,USD,standard,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-19
+claude-sonnet-5-5,cache_read,0.10,1000000,tokens,USD,standard,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-19
+claude-sonnet-5-5,cache_write,2.50,1000000,tokens,USD,standard 5-minute cache write = 1.25x input,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-19
+claude-sonnet-5-5,output,10.00,1000000,tokens,USD,standard,https://platform.claude.com/docs/en/about-claude/pricing,2026-10-19
+mock,input,0,1000000,tokens,USD,offline test model (no charge),local,2026-10-19
+mock,output,0,1000000,tokens,USD,offline test model (no charge),local,2026-10-19

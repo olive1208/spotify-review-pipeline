@@ -1,0 +1,40 @@
+{
+  "distinct_texts": 100,
+  "input": "data/cost_100.csv",
+  "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "label_config": "claude-haiku-5-5+enrich_v1-a2cff36f+schema_v1+b50",
+  "manifest_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+  "measured_at": "2026-10-19 21:50:11 -0700",
+  "result_cache": "cold = new empty run folder; warm = same folder, unchanged settings",
+  "rows": 100,
+  "runs": {
+    "cold": {
+      "new_call_attempts": 7,
+      "stage_seconds": {
+        "end_to_end_wall_clock_s": 50.598,
+        "enrich": 26.086,
+        "group": 6.718,
+        "memo": 15.418,
+        "prepare": 0.009,
+        "rank": 0.018,
+        "verify": 2.35
+      },
+      "wall_clock_s": 51.28
+    },
+    "warm": {
+      "new_call_attempts": 0,
+      "stage_seconds": {
+        "end_to_end_wall_clock_s": 4.63,
+        "enrich": 0.008,
+        "group": 0.019,
+        "memo": 0.025,
+        "prepare": 0.001,
+        "rank": 0.013,
+        "verify": 4.564
+      },
+      "wall_clock_s": 5.235
+    }
+  },
+  "verify_sample": 20,
+  "workers": 1
+}

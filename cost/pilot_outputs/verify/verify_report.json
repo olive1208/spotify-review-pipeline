@@ -1,0 +1,13 @@
+{
+  "all_three_agree": 0.85,
+  "compared": 20,
+  "declared_sample": "seeded random sample of 20 completed original (non-cache) records",
+  "disagreements": 3,
+  "intent_agreement": 0.85,
+  "seed": "olive-a5-verify-v1",
+  "severity_exact_agreement": 1.0,
+  "severity_mean_abs_diff": 0.0,
+  "topic_agreement": 1.0,
+  "verified": 20,
+  "verify_config": "claude-haiku-5-5+verify_v1-d673ea85"
+}

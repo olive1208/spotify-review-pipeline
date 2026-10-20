@@ -1,0 +1,115 @@
+{
+  "controls": {
+    "budget_usd": 15.0,
+    "fallback_fraction": 0.0,
+    "output_token_cap": 6000,
+    "workers": 10
+  },
+  "measured": {
+    "cold_api_usd": 0.038336,
+    "cold_wall_clock_s": 51.28,
+    "cost_per_1000_input_rows_usd": 0.383359,
+    "cost_per_completed_record_usd": 0.00038336,
+    "distinct_texts": 100,
+    "enrich_retry_rate": 1.0,
+    "ids": 100,
+    "input_sha256": "c884ac3b9be5066995d5063f96ad9af6e5e082975788c1684c4f6b6ea661dd0e",
+    "record_status": {
+      "completed": 100
+    },
+    "result_cache_hits_warm": 100,
+    "throughput_rows_per_s_cold": 1.95,
+    "unknown_cost_items": [],
+    "warm_api_usd": 0,
+    "warm_downstream_calls": 0,
+    "warm_new_enrich_calls": 0,
+    "warm_wall_clock_s": 5.235
+  },
+  "projections": [
+    {
+      "enrich_usd": 3.1994,
+      "est_hours": 0.76,
+      "extra_retry_rate": 0.0,
+      "fallback_usd": 0.0,
+      "group_memo_once_usd": 0.0338,
+      "over_budget": false,
+      "rows": 100000,
+      "scenario": "base",
+      "texts_sent": 77978,
+      "total_api_usd": 3.2421,
+      "verify_usd": 0.0089,
+      "volume": "chosen run: 100k sample"
+    },
+    {
+      "enrich_usd": 4.5752,
+      "est_hours": 0.83,
+      "extra_retry_rate": 0.1,
+      "fallback_usd": 0.0,
+      "group_memo_once_usd": 0.1014,
+      "over_budget": false,
+      "rows": 100000,
+      "scenario": "conservative",
+      "texts_sent": 77978,
+      "total_api_usd": 4.6892,
+      "verify_usd": 0.0127,
+      "volume": "chosen run: 100k sample"
+    },
+    {
+      "enrich_usd": 19.8661,
+      "est_hours": 4.44,
+      "extra_retry_rate": 0.0,
+      "fallback_usd": 0.0,
+      "group_memo_once_usd": 0.0338,
+      "over_budget": true,
+      "rows": 660609,
+      "scenario": "base",
+      "texts_sent": 484189,
+      "total_api_usd": 19.9087,
+      "verify_usd": 0.0089,
+      "volume": "full corpus, exact-text reuse"
+    },
+    {
+      "enrich_usd": 28.4085,
+      "est_hours": 4.87,
+      "extra_retry_rate": 0.1,
+      "fallback_usd": 0.0,
+      "group_memo_once_usd": 0.1014,
+      "over_budget": true,
+      "rows": 660609,
+      "scenario": "conservative",
+      "texts_sent": 484189,
+      "total_api_usd": 28.5225,
+      "verify_usd": 0.0127,
+      "volume": "full corpus, exact-text reuse"
+    },
+    {
+      "enrich_usd": 27.1045,
+      "est_hours": 6.03,
+      "extra_retry_rate": 0.0,
+      "fallback_usd": 0.0,
+      "group_memo_once_usd": 0.0338,
+      "over_budget": true,
+      "rows": 660609,
+      "scenario": "base",
+      "texts_sent": 660609,
+      "total_api_usd": 27.1472,
+      "verify_usd": 0.0089,
+      "volume": "full corpus, no reuse"
+    },
+    {
+      "enrich_usd": 38.7595,
+      "est_hours": 6.63,
+      "extra_retry_rate": 0.1,
+      "fallback_usd": 0.0,
+      "group_memo_once_usd": 0.1014,
+      "over_budget": true,
+      "rows": 660609,
+      "scenario": "conservative",
+      "texts_sent": 660609,
+      "total_api_usd": 38.8735,
+      "verify_usd": 0.0127,
+      "volume": "full corpus, no reuse"
+    }
+  ],
+  "rates_file": "rates.csv"
+}

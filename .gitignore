@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+data/spotify_reviews_18months.csv
+runs/
+__pycache__/
+*.pyc
+local-reference.json
+self-check.json
+node_modules/
+.next/
+.vercel/
