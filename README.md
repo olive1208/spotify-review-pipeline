@@ -1,8 +1,8 @@
 # Spotify review priorities: a multi-agent review pipeline
 
-Multi Agent Large Data Processing Pipeline. Author: Olive (Ge) Li.
+Final assignment, Multi Agent Large Data Processing Pipeline. Author: Olive (Ge) Li.
 
-**Question:** at the end of the review window (Nov 2023), where should Spotify put the next quarter of product effort?
+**Question:** at the end of the review window (Nov 2023), where should Spotify put the next quarter of product effort: access, usability, playback, or billing/support?
 
 **Answer from this run:** usability (ads and playback controls), ranked first by the baseline priority score. Full memo: [results/memo/memo.md](results/memo/memo.md).
 
