@@ -61,40 +61,40 @@ Source: [grading/ranking.csv](grading/ranking.csv). Rerun it with no model calls
 ## Architecture
 
 ```mermaid
-flowchart LR
-  CSV[(spotify_reviews_18months.csv<br/>660,622 rows)] --> P
-  subgraph CODE1[code only]
-    P[1. prepare<br/>parse, hash rows, profile,<br/>exact-duplicate texts,<br/>seeded 100k scope, queue]
+flowchart TD
+  CSV[("spotify_reviews_18months.csv<br/>660,622 rows")] --> P
+  subgraph CODE1["code only"]
+    P["1. prepare<br/>parse, hash rows, profile,<br/>exact-duplicate texts,<br/>seeded 100k scope, queue"]
   end
-  P -->|state.db: source table,<br/>ingestion_report.json| E
-  subgraph M1[model role: classifier]
-    E[2. enrich<br/>Haiku 5.5, <=50 distinct texts/request,<br/>forced JSON schema]
+  P -->|"state.db source table,<br/>ingestion_report.json"| E
+  subgraph M1["model role: classifier"]
+    E["2. enrich<br/>Haiku 5.5, max 50 distinct texts per request,<br/>forced JSON schema"]
   end
-  E -->|validated labels saved per batch<br/>(SQLite transaction)| V
-  E -.invalid / missing item.-> R1{one retry}
-  R1 -.still invalid.-> Q[(quarantine<br/>with reason)]
-  subgraph M2[model role: independent auditor]
-    V[3. verify<br/>Haiku 5.5, separate prompt,<br/>never sees first label]
+  E -->|"validated labels saved per batch<br/>in one SQLite transaction"| V
+  E -.->|"invalid or missing item"| R1{"one retry"}
+  R1 -.->|"still invalid"| Q[("quarantine<br/>with reason")]
+  subgraph M2["model role: independent auditor"]
+    V["3. verify<br/>Haiku 5.5, separate prompt,<br/>never sees first label"]
   end
-  V -->|verify_report.json<br/>disagreements.csv| G
-  subgraph M3[code + model role: namer]
-    G[4. group<br/>code: membership by topic<br/>model: names issues from<br/>25 sampled quotes]
+  V -->|"verify_report.json<br/>disagreements.csv"| G
+  subgraph M3["code plus model role: namer"]
+    G["4. group<br/>code: membership by topic<br/>model: names issues from<br/>25 sampled quotes"]
   end
-  G -->|membership.csv, issues.json| K
-  subgraph CODE2[code only]
-    K[5. rank<br/>score = count x mean severity<br/>= severity_sum]
+  G -->|"membership.csv, issues.json"| K
+  subgraph CODE2["code only"]
+    K["5. rank<br/>score = count x mean severity<br/>= severity_sum"]
   end
-  K -->|ranking.csv, claims_all.csv,<br/>aggregates.csv| W
-  subgraph M4[model role: writer]
-    W[6. memo<br/>Sonnet 5.5 reads only<br/>saved tables + evidence pack]
+  K -->|"ranking.csv, claims_all.csv,<br/>aggregates.csv"| W
+  subgraph M4["model role: writer"]
+    W["6. memo<br/>Sonnet 5.5 reads only<br/>saved tables + evidence pack"]
   end
-  W --> C{code checks every<br/>claim ID, number,<br/>issue ID, review ID}
-  C --> OUT[(memo.md, claims.csv)]
-  OUT --> DB[(Neon Postgres)]
+  W --> C{"code checks every<br/>claim ID, number,<br/>issue ID, review ID"}
+  C --> OUT[("memo.md, claims.csv")]
+  OUT --> DB[("Neon Postgres")]
   K --> DB
   E --> DB
-  DB --> API[Next.js API routes<br/>on Vercel = backend]
-  API --> UI[Dashboard page]
+  DB --> API["Next.js API routes<br/>on Vercel = backend"]
+  API --> UI["Dashboard page"]
 ```
 
 **Who decides what.** Code is the orchestrator: it chooses the next stage, builds every request, validates every
